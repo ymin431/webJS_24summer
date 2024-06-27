@@ -2,20 +2,28 @@
   margin: 0px;
 }
 
-body {
+#content {
+  display: flex;
+  flex-direction: column;
   background-color: aliceblue;
+  padding: 20px;
+  margin: 0px 30px 0px 30px;
 }
 
 header {
-  justify-content: end;
   align-items: start;
   padding: 20px;
   height: 100px;
 }
 
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   margin: 5px;
-  justify-content: end;
+  justify-content: center;
   padding: 10px;
   display: flex;
 }
@@ -30,6 +38,11 @@ a {
   padding: 5px 3px;
   text-decoration: none;
   border-radius: 3px;
+}
+
+li:hover,
+a:hover {
+  background-color: lightblue;
 }
 
 article {
@@ -71,6 +84,9 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  #content {
+    margin: 0px 10% 0px 10%;
+  }
   header {
     display: flex;
   }
