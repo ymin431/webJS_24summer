@@ -1,0 +1,87 @@
+/* 전체 요소 모두 선택 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 태그 selector */
+header {
+  background-color: aliceblue;
+  justify-content: end;
+  align-items: start;
+  padding: 10px;
+  height: 200px;
+}
+
+h2 {
+  color: blue;
+}
+
+/* 클래스 selector */
+.c1 {
+  background-color: yellow;
+}
+
+.c2 {
+  background-color: lavender;
+}
+
+/* 아이디 selector */
+#html > h2 {
+  background-color: green;
+}
+
+/* header > ul > li {
+  color: green;
+} */
+
+/* 자손관계 selector */
+header li {
+  color: green;
+  list-style: none;
+  margin: 5px;
+}
+
+/* 속성 selector */
+img[alt="html"],
+img[alt="js"] {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 가상 클래스 selector */
+a:hover {
+  color: red;
+}
+
+/* 박스모델 */
+article {
+  border: 5px dashed blue;
+  margin: 10px 20px 30px 40px;
+  padding: 20px 20px;
+}
+
+header {
+  display: flex;
+  padding: 10px;
+}
+
+div,
+ul {
+  border: 2px solid green;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
