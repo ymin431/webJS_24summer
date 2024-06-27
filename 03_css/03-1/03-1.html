@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS 기초</title>
-  </head>
+    <title>prac2-1</title>
+    <!-- 내부 스타일 -->
+    <!-- <style>
+      section {
+        background-color: lightblue; 
+        color: blue;
+      }
+    </style> -->
 
+    <!-- 외부 스타일 -->
+    <link rel="stylesheet" type="text/css" href="./03-1.css" />
+  </head>
   <body>
-    <!-- 메뉴목록 -->
-    <!-- vs코드에서 주석은 ctrl+/ -->
     <header>
-      mylogo
       <ul>
-        <li><a href="#d1">HTML</a></li>
-        <li><a href="#d2">CSS</a></li>
-        <li><a href="#d3">JavaScript</a></li>
-        <li><a href="#d4">React</a></li>
+        <li><a href="#frontend">HTML</a></li>
+        <li><a href="#html">CSS</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#react">React</a></li>
         <li>facebook</li>
         <li>instagram</li>
       </ul>
     </header>
     <main>
-      <article>
-        <h1>프론트엔드 (FrontEnd)</h1>
+      <!-- 인라인 스타일 -->
+      <article id="frontend" style="background-color: beige; color: brown">
+        <h1>프론트엔드 FrontEnd</h1>
         <p>
           웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다.
           프론트엔드쪽에서는 주로 HTML, CSS, 자바스크립트가 쓰이며, 요즘은
@@ -31,43 +38,36 @@
         </p>
       </article>
 
-      <section id="d1">
-        <h2>HTLM</h2>
-        <p>
-          <img src="../02img/html.png" />
-        </p>
+      <section id="html" class="c1>
+        <h2>HTML</h2>
+        <img src="../img/html.png" alt="html" />
         <p>
           HTML(HyperText Markup Language)은 웹을 이루는 가장 기초적인 구성
           요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용
         </p>
       </section>
 
-      <section id="d2">
+      <section id="css" class="c2">
         <h2>CSS</h2>
-        <p>
-          <img src="../02img/css.png" />
-        </p>
+        <img src="../img/css.png" alt="css" />
         <p>
           Cascading Style Sheets(CSS)는 HTML이나 XML(XML의 방언인 SVG, XHTML
           포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일 시트 언어
         </p>
       </section>
 
-      <section id="d3">
+      <section id="javascript" class="c1">
         <h2>JavaScript</h2>
-        <p>
-          <img src="../02img/js.png" />
-        </p>
+        <img src="../img/js.png" alt="js" />
         <p>
           웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 just-in-time
           컴파일 프로그래밍 언어로, 일급 함수를 지원
         </p>
       </section>
-      <section id="d4">
+
+      <section id="react" class="c2">
         <h2>React</h2>
-        <p>
-          <img src="../02img/react.png" />
-        </p>
+        <img src="../img/react.png" alt="react" />
         <p>사용자 인터페이스를 만들기 위한 JavaScript 라이브러리</p>
       </section>
     </main>
