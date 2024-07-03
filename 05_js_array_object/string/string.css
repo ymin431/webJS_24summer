@@ -1,0 +1,39 @@
+section {
+  width: 100%;
+  height: auto;
+
+  border: 1px dashed gainsboro;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section > div {
+  border: 1px dotted grey;
+  width: 90%;
+  margin: 10px;
+}
+
+#divContent > form,
+#divContent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divContent > form {
+  width: 100%;
+  flex-direction: column;
+}
+
+#divContent div {
+  width: 80%;
+  background-color: yellow;
+}
+
+input {
+  width
+}
