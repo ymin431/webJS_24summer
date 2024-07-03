@@ -1,4 +1,4 @@
-/* 매번 쓸 css */
+/* 전체 요소 모두 선택 */
 * {
   margin: 0px;
   padding: 0px;
@@ -7,7 +7,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 main {
@@ -29,6 +29,73 @@ header {
   padding: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+}
+
+section,
+#divTitle,
+#divContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  height: auto;
+
+  border: 1px dashed gainsboro;
+  padding: 20px;
+  flex-direction: column;
+}
+
+section > div {
+  border: 1px dotted grey;
+  width: 90%;
+  margin: 10px;
+}
+
+#divTitle,
+#divContent,
+#msg {
+  border: 1px dotted gray;
+  width: 90%;
+
+  padding: 20px;
+}
+
+#divTitle {
+  background-color: aliceblue;
+  border: 1px dotted gray;
+  font-size: x-large;
+  font-weight: bold;
+  height: 60px;
+  margin: 20px;
+}
+
+#divContent {
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+#divContent > p {
+  margin-bottom: 10px;
+}
+
+#msg {
+  height: 60px;
+}
+
 button {
   display: inline-flex;
   justify-content: center;
@@ -46,5 +113,4 @@ button {
 
 button:hover {
   background-color: coral;
-  color: white;
 }

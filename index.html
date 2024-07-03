@@ -1,19 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>소프트웨어융합기초1(2024여름계절)</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <style>
+      #divTitle,
+      #divContent {
+        height: auto;
+        justify-content: left;
+        display: block;
+      }
+
+      ul {
+        font-weight: lighter;
+        font-size: smaller;
+      }
+
+      ul > li {
+        margin-left: 30px;
+      }
+
+      #content > li {
+        margin: 15px;
+      }
+
+      a {
+        color: black;
+        padding: 5px;
+        border-radius: 10px;
+      }
+
+      a:hover {
+        color: black;
+        background-color: white;
+      }
+
+      footer {
+        width: 60%;
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+      }
+
+      footer {
+        color: white;
+      }
+    </style>
   </head>
   <body>
-    <!-- h 태그는 h1부터 쓰고 계층적인 구조 나타내라 -->
-    <h1>소프트웨어융합기초1</h1>
-    <ul>
-      <li>1. HTML 기초</li>
-    </ul>
-
-    <h2>참고사이트</h2>
-    <ul>
-      <!-- a 태그는 앵커 태크(하이퍼링크와 속성 기능) -->
-      <li><a href="https://www.w3schools.com/">w3School</a></li>
-    </ul>
+    <main>
+      <header>
+        <h1>소프트웨어융합기초1</h1>
+        <div><a href="./index.html">홈</a></div>
+      </header>
+      <section>
+        <div id="divTitle">
+          <h3>목차</h3>
+          <ul id="content">
+            <li>
+              2. HTML
+              <ul>
+                <li><a href="./02_html/02.html">2.1 기초</a></li>
+              </ul>
+            </li>
+            <li>
+              3. CSS
+              <ul>
+                <li><a href="./03_css/03-1/03-1.html">3.1 기초</a></li>
+                <li><a href="./03_css/03-2/03-2.html">3.1 활용</a></li>
+              </ul>
+            </li>
+            <li>
+              4. JS
+              <ul>
+                <li><a href="./04_js/04/04.html">4.1 기초</a></li>
+                <li>
+                  <a href="./04_js/randomDice/randomDice.html"
+                    >4.2 주사위 게임</a
+                  >
+                </li>
+                <li>
+                  <a href="./04_js/randomDiceMatch/randomDiceMatch.html"
+                    >4.3 주사위 게임 (💻 vs 👩)</a
+                  >
+                </li>
+                <li>
+                  <a href="./04_js/unitConverter/unitConverter.html"
+                    >4.4 단위 환산</a
+                  >
+                </li>
+                <li>
+                  <a href="./04_js/updownGame/updownGame.html"
+                    >4.5 업다운 게임</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              5. JS 배열 객체
+              <ul>
+                <li>
+                  <a href="./05_js_array_object/05/prac.html">5.1 기초</a>
+                </li>
+                <li>
+                  <a href="./05_js_array_object/string/string.html"
+                    >5.2 문자열 다루기</a
+                  >
+                </li>
+                <li>
+                  <a href="./05_js_array_object/lotto/lotto.html"
+                    >5.3 로또번호 생성기</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="divContent">
+          <h2>참고사이트</h2>
+          <ul>
+            <!-- a 태그는 앵커 태크(하이퍼링크와 속성 기능) -->
+            <li><a href="https://www.w3schools.com/">w3School</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
